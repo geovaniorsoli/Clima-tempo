@@ -1,0 +1,78 @@
+@font-face {
+    font-family: "font";
+    src: url(../font/OverusedGrotesk-SemiBold.ttf);
+}
+
+.font{
+    font-family: "font";
+}
+
+.title{
+    font-size: 100px;
+}
+
+
+/* horario do dia */
+
+.manha{
+    background-color: rgb(15, 134, 214);
+}
+.tarde{
+    background-color: #191919;
+}
+
+.noite{
+    background-color: #202020;
+    color: white;
+
+  
+}
+
+
+/* btn */
+.btn-enviar {
+    background: none;
+    border: solid 2px #3e3e3e;
+    color: #ffffff;
+    padding: 10px; 
+    border-radius: 5px;
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out; 
+}
+
+.btn-enviar:hover {
+    background-color: #3e3e3e;
+    color: white;
+}
+
+.input{
+    background-color: white;
+    border-radius: 5px;
+    border: solid 2px #4a4a4a;
+    padding: 5px;
+    margin-right: 4px;
+    width: 300px;
+    transition:  border 0.3s ease-in-out, color 0.3s ease-in-out; 
+}
+
+.input:focus {
+    background-color: white;
+    outline: none; 
+    border-color: #ffffff;
+}
+
+#ShowClimate { 
+    display: inline;
+    justify-content: center; 
+    align-items: center; 
+    height: 100%;
+}
+
+
+.temp{
+    font-size: 100px;
+    color: #ffffff;
+    
+}
