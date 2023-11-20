@@ -1,0 +1,210 @@
+@font-face {
+    font-family: "font";
+    src: url(../font/OverusedGrotesk-SemiBold.ttf);
+}
+
+/* time */
+.font{
+    font-family: "font";
+}
+
+.title{
+    font-size: 100px;
+}
+
+.dia{
+    background-color: #81b8f9;
+
+}
+
+
+/* input */
+.input{
+    background-color: #ffff;
+    border-radius: 5px;
+    border: solid 2px #d6d6d6;
+    padding: 5px;
+    margin-right: 4px;
+    width: 300px;
+    font-family: 'font';
+    transition: border 0.3s ease-in-out, color 0.3s ease-in-out; 
+}
+
+.input:focus {
+    background-color: white;
+    outline: none; 
+    border-color: #2e2e2e;
+}
+
+.input-modal{
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    border: solid 2px #d6d6d6;
+    padding: 5px;
+    margin-right: 4px;
+    width: 300px;
+    font-family: 'font';
+    transition: border 0.3s ease-in-out, color 0.3s ease-in-out; 
+}
+
+.input-modal:focus {
+    background-color: white;
+    outline: none; 
+    border-color: #2e2e2e;
+}
+
+
+/* main display */
+.temp{
+    font-size: 200px;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'font';
+    margin-bottom: 30px;
+    
+}
+
+.Local{
+    font-size: 90px;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'font';
+    margin-bottom: 60px;
+    text-align: start;
+}
+
+
+
+#ShowClimate{
+    border: 5px solid #a6cfff;
+    background-color: #62a5f3;
+    color: #ffffff;
+    width: 60%;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding: 30px;
+    border-radius: 20px;
+}
+
+/* modal */
+
+.modal-edit{
+    color: #585858;
+    font-family: 'font';
+}
+
+
+
+/* btn */
+.btn-github{
+    background-color: rgb(59, 59, 59);
+    border: none;
+    border-radius: 5px;
+    border: 2px solid rgb(107, 107, 107);
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+    color: white;
+    font-size: 15px;
+    padding: 10px; 
+}
+
+.btn-github:hover{
+    background-color: rgb(107, 107, 107);
+}
+
+.btn-config{
+    background-color: rgb(77, 119, 255);
+    border: none;
+    border-radius: 5px;
+    border: 2px solid rgb(145, 171, 255);
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+    color: white;
+    font-size: 15px;
+    padding: 10px; 
+}
+
+.btn-config:hover{
+    background-color: rgb(145, 171, 255);
+}
+
+.botaoicone{
+    display: flex;
+    align-items: center;
+}
+
+.btn-fechar{
+    background-color:#ffffff;
+    border: 2px solid #c44c4c;
+    border-radius: 5px;
+    color: rgb(0, 0, 0);
+    transition: color 0.3s ease-in-out, background 0.3s ease-in-out;
+    padding: 5px;
+}
+
+.btn-fechar:hover{
+    background-color:#d43e3e;
+    border: 2px solid #dc5656;
+    border-radius: 5px;
+    color: white;
+}
+
+.format-icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-enviar {
+    background: none;
+    border: solid 2px #d6d6d6;
+    color: #d3d3d3;
+    padding: 10px; 
+    border-radius: 5px;
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out; 
+}
+
+.btn-enviar:hover {
+    background-color: #ffffff;
+    color: #828482;
+}
+
+/* icon */
+
+.icondisplay{
+    padding-top: 10px;
+}
+
+/* responsive */
+
+@media(max-width: 500px){
+    #ShowClimate{
+        width: 90%;
+        padding: 20px;
+      
+    }
+    
+    .temp{
+        font-size: 100px;
+        color: #ffffff;
+        
+    }
+    
+    .Local{
+        font-size: 40px;
+    }
+
+    .input-modal{
+        width: 150px;
+    }
+    
+
+}
