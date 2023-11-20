@@ -2,10 +2,17 @@ const apiKey = "2030cce9898243278e3224436231811"
 
 function climate(e) {
     e.preventDefault()
-
     const location = document.getElementById('local').value
+    clima(location)
+}
 
-    clima(location).then(response => {
+ document.getElementById('form').addEventListener('submit', climate)
+
+ function clima(location){
+
+    return axios.get(`https://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${location}`)
+
+        .then(response => {
         const weatherData = response.data.current
         const locationData = response.data.location
 
@@ -13,15 +20,16 @@ function climate(e) {
         if (containterClima) {
             containterClima.innerHTML = ''
 
-            const local = document.createElement("h1");
-            local.textContent = ` ${locationData.name}, ${locationData.region}, ${locationData.country}`; // Nome formatado do local
-            containterClima.appendChild(local);
-            
             const temp = document.createElement("h1")
             temp.className = 'temp'
-            temp.textContent = ` ${weatherData.temp_c} °C`
+            temp.textContent = ` ${weatherData.temp_c}°C`
             containterClima.appendChild(temp)
 
+            const local = document.createElement("h1");
+            local.className = 'Local'
+            local.textContent = ` ${locationData.name} ${locationData.region} ${locationData.country}`;
+            containterClima.appendChild(local);
+            
             const sense = document.createElement("h2")
             sense.textContent = `Sensação Térmica: ${weatherData.feelslike_c} °C`
             containterClima.appendChild(sense)
@@ -40,17 +48,24 @@ function climate(e) {
     })
 }
 
-document.getElementById('form').addEventListener('submit', climate)
 
-
-
-function clima(location) {
-    return axios.get(`https://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${location}`)
+function setlocaldefault(e) {
+    e.preventDefault();
+    const setlocal = document.querySelector("#localsave").value;
+    console.log(setlocal);  
+    clima(setlocal);
+    localStorage.setItem('localpadrao' , setlocal)
 }
 
+document.getElementById('form-default').addEventListener('submit', setlocaldefault);
 
+window.onload = () =>{
+    let localPadrao = localStorage.getItem("localpadrao") || "sao paulo"
+        clima(localPadrao)
+}   
+    
 function styleclima(){
-    const atual = new Date().getHours
+    const atual = new Date().getHours()
     const DOM = document.body
 
     if(atual >= 6 && atual < 12){
@@ -60,8 +75,10 @@ function styleclima(){
         }else{ 
         DOM.className = "noite"
     }
-
-
+    console.log(styleclima)
 }
 
 styleclima()
+
+
+    
