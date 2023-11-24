@@ -3,6 +3,32 @@
     src: url(../font/OverusedGrotesk-SemiBold.ttf);
 }
 
+
+/* html */
+::-webkit-scrollbar-thumb {
+    background-color: #ffffff; 
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background: #000000;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* sections */
+
+#MoreDetails{
+    height: 600px;
+}
+
 /* time */
 .font{
     font-family: "font";
@@ -17,6 +43,22 @@
 
 }
 
+/* Cor  */
+.Green{
+    color: #9acb5a;
+}
+
+.Yellow{
+    color: rgb(252, 252, 38);
+}
+
+.Red{
+    color: #f97a7a;
+}
+
+.Black{
+    color: #660101;
+}
 
 
 /* input */
@@ -190,9 +232,7 @@
 
 /* formatação de icone */
 .format-icon{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    margin: 0 auto;
 }
 
 /* responsividade */

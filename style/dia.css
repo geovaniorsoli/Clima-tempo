@@ -3,6 +3,32 @@
     src: url(../font/OverusedGrotesk-SemiBold.ttf);
 }
 
+/* html */
+::-webkit-scrollbar-thumb {
+    background-color: #ffffff; 
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background:#81b8f9;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+/* sections */
+
+#MoreDetails{
+    height: 600px;
+}
+
 /* time */
 .font{
     font-family: "font";
@@ -17,6 +43,22 @@
 
 }
 
+/* Cor  */
+.Green{
+    color: #9acb5a;
+}
+
+.Yellow{
+    color: rgb(252, 252, 38);
+}
+
+.Red{
+    color: #f97a7a;
+}
+
+.Black{
+    color: #660101;
+}
 
 /* input */
 .input{
@@ -77,6 +119,20 @@
     text-align: start;
 }
 
+#ShowMoreDetails{
+    border: 5px solid #a6cfff;
+    background-color: #62a5f3;
+    color: #ffffff;
+    width: 60%;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding: 30px;
+    border-radius: 20px;
+    margin-top: 20px;
+    font-size: 30px;
+    font-family: 'font';
+}
 
 
 #ShowClimate{
@@ -97,7 +153,6 @@
     color: #585858;
     font-family: 'font';
 }
-
 
 
 /* btn */
@@ -155,9 +210,7 @@
 }
 
 .format-icon{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    margin: 0 auto;
 }
 
 .btn-enviar {
