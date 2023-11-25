@@ -245,6 +245,12 @@ html {
       
     }
     
+    #ShowMoreDetails{
+        width: 90%;
+        padding: 20px;
+      
+    }
+
     .temp{
         font-size: 100px;
         color: #ffffff;

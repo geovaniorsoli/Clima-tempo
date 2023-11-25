@@ -29,6 +29,13 @@ html {
     height: 600px;
 }
 
+ 
+#ShowMoreDetails{
+    width: 90%;
+    padding: 20px;
+  
+}
+
 /* time */
 .font{
     font-family: "font";
