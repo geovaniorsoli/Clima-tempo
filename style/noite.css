@@ -36,6 +36,8 @@ html {
   
 }
 
+
+
 /* time */
 .font{
     font-family: "font";
@@ -138,6 +140,21 @@ html {
     margin: 0 auto;
     padding: 30px;
     border-radius: 20px;
+}
+
+#ShowMoreDetails{
+    border: 5px solid #3d3d3d;
+    background-color: #111111;
+    color: #ffffff;
+    width: 60%;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding: 30px;
+    border-radius: 20px;
+    margin-top: 20px;
+    font-size: 30px;
+    font-family: 'font';
 }
 
 /* modal */
