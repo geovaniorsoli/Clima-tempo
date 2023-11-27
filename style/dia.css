@@ -120,7 +120,7 @@ html {
 }
 
 #ShowMoreDetails{
-    border: 5px solid #a6cfff;
+    border: 2px solid #a6cfff;
     background-color: #62a5f3;
     color: #ffffff;
     width: 60%;
@@ -136,7 +136,7 @@ html {
 
 
 #ShowClimate{
-    border: 5px solid #a6cfff;
+    border: 2px solid #a6cfff;
     background-color: #62a5f3;
     color: #ffffff;
     width: 60%;
